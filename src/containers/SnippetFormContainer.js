@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
 import SnippetForm from "../components/SnippetForm";
-import { setName } from "../actions";
+import { setName, setPrefix } from "../actions";
 
-function mapStateToProps(state) {
+function mapStateToProps({ name, prefix }) {
   return {
-    name: state.name,
+    name,
+    prefix,
   };
 }
 
@@ -12,6 +13,9 @@ function mapDispatchToProps(dispatch) {
   return {
     onNameChange: (event) => {
       dispatch(setName(event.target.value));
+    },
+    onPrefixChange: (event) => {
+      dispatch(setPrefix(event.target.value));
     },
   };
 }
