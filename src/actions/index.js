@@ -17,6 +17,6 @@ function makeActionCreator(type, ...argNames) {
 
 // action creators
 export const setName = makeActionCreator(SET_NAME, "name");
-export const setPredix = makeActionCreator(SET_PREFIX, "prefix");
+export const setPrefix = makeActionCreator(SET_PREFIX, "prefix");
 export const setBody = makeActionCreator(SET_BODY, "body");
 export const setDescription = makeActionCreator(SET_DESCRIPTION, "description");
