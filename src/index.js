@@ -4,6 +4,7 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import reducer from "./reducers";
 import registerServiceWorker from "./registerServiceWorker";
+import App from "./components/App";
 import "./styles/index.css";
 
 const initialState = {
@@ -13,11 +14,15 @@ const initialState = {
   description: "",
 };
 
-const store = createStore(reducer, initialState);
+const store = createStore(
+  reducer,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 const rootComponent = (
   <Provider store={store}>
-    <div>Hello</div>
+    <App />
   </Provider>
 );
 
