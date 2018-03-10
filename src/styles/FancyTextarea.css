@@ -1,4 +1,4 @@
-.fancy-input {
+.fancy-textarea {
   background: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -6,15 +6,16 @@
   display: block;
 }
 
-.fancy-input .fancy-label {
-  color: #cccccc;
-  font-size: 0.75em;
-  text-transform: uppercase;
-}
-
-.fancy-input input {
+.fancy-textarea textarea {
   border: none;
   width: 100%;
   font-size: 1.2em;
   outline: none;
+  resize: none;
+}
+
+.fancy-textarea .fancy-label {
+  color: #cccccc;
+  font-size: 0.75em;
+  text-transform: uppercase;
 }
