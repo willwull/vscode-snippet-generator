@@ -26,3 +26,19 @@
   margin-top: -40px;
   overflow-x: scroll;
 }
+
+@media (max-width: 575px) {
+  #main-container {
+    grid-template-columns: 1fr;
+  }
+
+  #input-container {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  #header h1 {
+    font-size: 3em;
+  }
+}
