@@ -6,8 +6,14 @@ import "../styles/App.css";
 function App() {
   return (
     <div id="main-container">
-      <SnippetFormContainer />
-      <ResultContainer />
+      <div className="input">
+        <h1>Input</h1>
+        <SnippetFormContainer />
+      </div>
+      <div className="output">
+        <h1>Output</h1>
+        <ResultContainer />
+      </div>
     </div>
   );
 }
