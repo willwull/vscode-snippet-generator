@@ -8,12 +8,13 @@
 #header {
   background: linear-gradient(-70deg, #6a4bbe, #4ea1ff);
   color: white;
-  padding: 10px 40px 70px 40px;
+  padding: 50px 40px 90px 40px;
   font-size: 16px;
 }
 
 #header h1 {
   font-size: 4em;
+  margin-top: 0px;
   margin-bottom: 5px;
 }
 
