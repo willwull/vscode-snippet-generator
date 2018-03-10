@@ -14,6 +14,7 @@ module.exports = {
         "no-use-before-define": 0,
         "no-plusplus": 0,
         "quote-props": 0,
+        "object-curly-newline": 0,
         "react/jsx-filename-extension": 0,
         "jsx-a11y/label-has-for": [2, {
             "components": ["Label"],
