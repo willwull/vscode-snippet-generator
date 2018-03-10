@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark as theme } from "react-syntax-highlighter/styles/hljs";
+import Clipboard from "react-clipboard.js";
 import "../styles/Result.css";
 
 function format(string) {
@@ -23,7 +24,12 @@ function Result({ name, prefix, body, description }) {
 
   return (
     <div id="result">
-      <div className="label">Output</div>
+      <div className="label-container">
+        <div className="label">Output</div>
+        <div className="copy-wrapper">
+          <Clipboard data-clipboard-text={resultString}>Copy</Clipboard>
+        </div>
+      </div>
       <SyntaxHighlighter language="json" style={theme} customStyle={customStyle}>
         {resultString}
       </SyntaxHighlighter>

@@ -6,6 +6,15 @@
   background: rgb(40, 44, 52);
 }
 
+#result .label-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#result .label-container .copy-wrapper {
+  text-align: right;
+}
+
 #result .label {
   color: rgb(121, 121, 121);
   text-transform: uppercase;
