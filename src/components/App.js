@@ -13,8 +13,7 @@ function App() {
         <div id="input-container">
           <SnippetFormContainer />
         </div>
-        <div className="output">
-          <h1>Output</h1>
+        <div id="output-container">
           <ResultContainer />
         </div>
       </div>

@@ -15,3 +15,8 @@
 #input-container {
   margin-top: -40px;
 }
+
+#output-container {
+  margin-top: -40px;
+  overflow-x: scroll;
+}

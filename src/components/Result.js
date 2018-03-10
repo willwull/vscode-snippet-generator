@@ -1,5 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark as theme } from "react-syntax-highlighter/styles/hljs";
+import "../styles/Result.css";
 
 function format(string) {
   return string.replace(/"/g, "\\\"");
@@ -14,11 +17,16 @@ function Result({ name, prefix, body, description }) {
   ]
 }`;
 
+  const customStyle = {
+    padding: 0,
+  };
+
   return (
     <div id="result">
-      <pre>
+      <div className="label">Output</div>
+      <SyntaxHighlighter language="json" style={theme} customStyle={customStyle}>
         {resultString}
-      </pre>
+      </SyntaxHighlighter>
     </div>
   );
 }
