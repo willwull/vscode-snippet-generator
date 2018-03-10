@@ -1,0 +1,6 @@
+.snippet-form {
+  height: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: auto auto auto 1fr;
+}
