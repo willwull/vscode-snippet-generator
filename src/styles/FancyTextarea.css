@@ -2,9 +2,19 @@
   background: white;
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.025) 0 20px 30px;
+  transition: 300ms box-shadow;
   display: block;
   height: 250px;
+  cursor: text;
+}
+
+.fancy-textarea:focus-within {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 20px 30px;
+}
+
+.fancy-textarea:focus-within .fancy-label {
+  color: #4ea1ff;
 }
 
 .fancy-textarea textarea {
@@ -20,4 +30,5 @@
   color: #cccccc;
   font-size: 0.75em;
   text-transform: uppercase;
+  transition: 300ms color;
 }
