@@ -5,14 +5,18 @@ import "../styles/App.css";
 
 function App() {
   return (
-    <div id="main-container">
-      <div className="input">
-        <h1>Input</h1>
-        <SnippetFormContainer />
-      </div>
-      <div className="output">
-        <h1>Output</h1>
-        <ResultContainer />
+    <div>
+      <header id="header">
+        <h1>VS Code snippet generator</h1>
+      </header>
+      <div id="main-container">
+        <div id="input-container">
+          <SnippetFormContainer />
+        </div>
+        <div className="output">
+          <h1>Output</h1>
+          <ResultContainer />
+        </div>
       </div>
     </div>
   );

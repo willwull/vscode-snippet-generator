@@ -1,4 +1,17 @@
 #main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  padding: 0 40px;
+}
+
+#header {
+  background: linear-gradient(70deg, rgb(106, 75, 190), rgb(78, 161, 255));
+  color: white;
+  padding: 10px 40px 30px 40px;
+  font-size: 30px;
+}
+
+#input-container {
+  margin-top: -40px;
 }
